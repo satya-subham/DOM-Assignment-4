@@ -1,0 +1,29 @@
+.container{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    
+}
+.box{
+    width: 400px;
+    min-height: 100px;
+    background-color: beige;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+.box hr{
+    height: 2px;
+    background-color: black;
+
+}
+.box #input{
+    width: 300px;
+    outline: none;
+    text-align: center;
+}
+.add:hover{
+    background-color: green;
+    border: none;
+    color: white;
+}
