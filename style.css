@@ -7,10 +7,44 @@
 }
 .box{
     width: 400px;
-    min-height: 100px;
+    min-height: 120px;
     background-color: beige;
     padding: 0px 20px;
     border-radius: 5px;
+}
+#newDiv{
+    height: 50px;
+    margin-top: 5px;
+}
+#todoInput{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid cyan;
+    outline: none;
+}
+#edit{
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0px 5px;
+    border: none;
+    background-color: cadetblue;
+}
+#edit:hover{
+    background-color: green;
+    color: cyan;
+}
+#delete{
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: cadetblue;
+}
+#delete:hover{
+    background-color: red;
+    color: white;
 }
 .box hr{
     height: 2px;
@@ -19,8 +53,18 @@
 }
 .box #input{
     width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid cyan;
     outline: none;
     text-align: center;
+}
+.add{
+    height: 30px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: cadetblue;
 }
 .add:hover{
     background-color: green;
