@@ -31,13 +31,13 @@ add_button.addEventListener("click", (event) => {
   if (input.value.length > 1) {
     let new_div = document.createElement("div");
     new_div.setAttribute("id", "newDiv");
-    let todos_checkbox_button = document.createElement('button');
+    // let todos_checkbox_button = document.createElement('button');
 
-    // let todos_checkbox = document.createElement("input");
-    // todos_checkbox.type = "checkbox";
-    // todos_checkbox.setAttribute("id", "checkbox");
+    let todos_checkbox = document.createElement("input");
+    todos_checkbox.type = "checkbox";
+    todos_checkbox.setAttribute("id", "checkbox");
     // todos_checkbox_button.append(todos_checkbox);
-    new_div.append(todos_checkbox_button)
+    new_div.append(todos_checkbox)
 
     let todos_input = document.createElement("input");
     todos_input.type = "text";
@@ -75,7 +75,7 @@ add_button.addEventListener("click", (event) => {
     
 
 
-    todos_checkbox_button.addEventListener('click', (event)=>{
+    todos_checkbox.addEventListener('click', (event)=>{
       let key_1 = todos_input.value;
   
       let complete_div = document.createElement("div");
@@ -84,6 +84,7 @@ add_button.addEventListener("click", (event) => {
       let complete_checkbox = document.createElement("input");
       complete_checkbox.type = "checkbox";
       complete_checkbox.setAttribute("id", "completecheckbox");
+      // complete_checkbox.setAttribute("checked");
       complete_div.append(complete_checkbox);
   
       let complete_input = document.createElement("input");

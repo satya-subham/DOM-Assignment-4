@@ -80,3 +80,34 @@
     color: white;
     cursor: pointer;
 }
+#completeDiv{
+    height: 50px;
+    margin-top: 5px;
+}
+#completeInput{
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: line-through;
+    
+}
+#completeEdit{
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0px 5px;
+    border: none;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+#completeDelete{
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: cadetblue;
+    cursor: pointer;
+}
