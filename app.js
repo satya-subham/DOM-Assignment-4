@@ -31,11 +31,13 @@ add_button.addEventListener("click", (event) => {
   if (input.value.length > 1) {
     let new_div = document.createElement("div");
     new_div.setAttribute("id", "newDiv");
+    let todos_checkbox_button = document.createElement('button');
 
-    let todos_checkbox = document.createElement("input");
-    todos_checkbox.type = "checkbox";
-    todos_checkbox.setAttribute("id", "checkbox");
-    new_div.append(todos_checkbox);
+    // let todos_checkbox = document.createElement("input");
+    // todos_checkbox.type = "checkbox";
+    // todos_checkbox.setAttribute("id", "checkbox");
+    // todos_checkbox_button.append(todos_checkbox);
+    new_div.append(todos_checkbox_button)
 
     let todos_input = document.createElement("input");
     todos_input.type = "text";
@@ -70,5 +72,44 @@ add_button.addEventListener("click", (event) => {
     todos_delete_button.addEventListener("click", (event) => {
       new_div.remove();
     });
+    
+
+
+    todos_checkbox_button.addEventListener('click', (event)=>{
+      let key_1 = todos_input.value;
+  
+      let complete_div = document.createElement("div");
+      complete_div.setAttribute("id", "completeDiv");
+  
+      let complete_checkbox = document.createElement("input");
+      complete_checkbox.type = "checkbox";
+      complete_checkbox.setAttribute("id", "completecheckbox");
+      complete_div.append(complete_checkbox);
+  
+      let complete_input = document.createElement("input");
+      complete_input.type = "text";
+      complete_input.setAttribute("id", "completeInput");
+      complete_input.setAttribute("readonly", "readonly");
+      complete_input.value = key_1;
+      complete_div.append(complete_input);
+  
+      let complete_edit_button = document.createElement("button");
+      complete_edit_button.setAttribute("id", "completeEdit");
+      complete_edit_button.innerText = "Edit";
+      complete_div.append(complete_edit_button);
+  
+      let complete_delete_button = document.createElement("button");
+      complete_delete_button.setAttribute("id", "completeDelete");
+      complete_delete_button.innerText = "Delete";
+      complete_div.append(complete_delete_button);
+  
+      complete.append(complete_div);
+  
+      new_div.remove();
+    })
   }
+
+  
+
 });
+
